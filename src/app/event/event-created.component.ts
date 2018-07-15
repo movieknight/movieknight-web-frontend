@@ -24,8 +24,7 @@ export class EventCreatedComponent implements OnInit {
   }
 
   getShareLink() {
-    const url = this.getLocation();
-    return url.protocol + '//' + url.host + '/recommendation/' + event.id;
+    return this.getLocation().replace('/event', '/event/recommendation');
   }
 
   ngOnInit() {
