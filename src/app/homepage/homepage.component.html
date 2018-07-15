@@ -1,8 +1,15 @@
 <div class="container">
   <!--<a routerLink="/auth">foo</a>-->
   <div style="text-align: center;">
-    <h1 style="text-align: center" class="title">MovieKnight</h1>
-    <h4 style="text-align: center;" class="subtitle">Your film search ends here</h4>
+    <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="10px">
+      <div>
+        <img src="../../assets/knight.png"/>
+      </div>
+      <div>
+        <h1 style="text-align: center" class="title">MovieKnight</h1>
+        <h4 style="text-align: center;" class="subtitle">Your film search ends here</h4>
+      </div>
+    </div>
     <button mat-raised-button color="primary" routerLink="event/new">Create Event</button>
     <div class="card-container">
       <mat-card class="medium-purple">

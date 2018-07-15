@@ -1,0 +1,28 @@
+<div class="container">
+  <h4 class="subtitle">Share Now</h4>
+
+  <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
+    <mat-card fxShow fxHide.xs="true" fxFlex="50%">
+      <h2><b>Create an event to find your next movie</b></h2>
+      <p>this is some content</p>
+    </mat-card>
+
+    <mat-card fxShow fxFlex="50%" fxFlex.xs="100%">
+      <h2 style="text-align: center;">Sharing Links</h2>
+      <h4 style="margin: 0;">Admin Link: &nbsp;</h4>
+      <mat-form-field>
+        <input matInput value="http://site.com/event/9386810" />
+      </mat-form-field>
+      <br>
+      <br>
+      <h4 style="margin: 0;">Voting Link: &nbsp;</h4>
+      <mat-form-field>
+        <input matInput value="http://site.com/event/9386810" />
+      </mat-form-field>
+      <br>
+      <a mat-raised-button style="float: right;" color="primary" href="http://site.com/event/9386810">Vote Now</a>
+    </mat-card>
+  </div>
+  <br>
+  <button mat-raised-button color="primary" routerLink="/event/new">Back</button>
+</div>

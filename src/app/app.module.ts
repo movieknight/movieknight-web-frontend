@@ -23,6 +23,7 @@ import { AppComponent } from './app.component';
 import { SidenavModule } from './sidenav/sidenav.module';
 import { AlertsModule } from './alerts/alerts.module';
 import { appRoutes } from './app.routes';
+import { EventCreatedComponent } from './event/event-created.component';
 
 @NgModule({
   declarations: [
