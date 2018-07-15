@@ -24,7 +24,6 @@ export class EventCreateComponent implements OnInit {
 
   submit() {
     this.eventService.post(this.form.value).subscribe(data => {
-      console.info(data);
       this.router.navigate([`/event/${data.id}`]);
     }, console.error);
   }

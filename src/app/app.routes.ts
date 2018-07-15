@@ -7,6 +7,7 @@ import { AuthGuard } from './auth/auth.guard';
 export const appRoutes: Routes = [
   { path: '', loadChildren: './homepage/homepage.module#HomepageModule' },
   { path: 'event', loadChildren: './event/event.module#EventModule' },
+  { path: 'recommendation', loadChildren: './recommendation/recommendation.module#RecommendationModule' },
   { path: 'auth', loadChildren: './auth/auth.module#AuthModule' },
   {
     path: 'admin', loadChildren: './admin/admin.module#AdminModule',

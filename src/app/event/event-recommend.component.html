@@ -1,0 +1,40 @@
+<div class="container">
+  <h4 class="subtitle">You've been invited to recommend...</h4>
+
+  <div class="card-container">
+    <mat-card class="medium-purple">
+      <h2><b>Sam's Birthday Party</b></h2>
+      <h5><i>Some event description</i></h5>
+      <br>
+      <p>Some description about how to use the system.</p>
+    </mat-card>
+  </div>
+
+  <br>
+
+  <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
+    <mat-card fxShow fxHide.xs="true" fxFlex="50%">
+      <h2><b>Add preferences by genre...</b></h2>
+      <mat-form-field>
+        <input matInput placeholder="Genre name" />
+      </mat-form-field>
+    </mat-card>
+
+    <mat-card fxShow fxHide.xs="true" fxFlex="50%">
+      <h2><b>Add preferences by title...</b></h2>
+      <mat-form-field>
+        <input matInput placeholder="Movie name" />
+      </mat-form-field>
+    </mat-card>
+  </div>
+
+  <br>
+
+  <mat-card>
+    <h2><b>My recommended movies:</b></h2>
+  </mat-card>
+
+  <br>
+  <button mat-raised-button color="accent" routerLink="/event/new">Back</button>
+  <button mat-raised-button style="float: right;" color="accent" routerLink="/event/new">Submit</button>
+</div>

@@ -8,7 +8,7 @@ import {map} from 'rxjs/operators';
 
 @Injectable()
 export class EventService {
-  events: Map<number, IEvent> = new Map<>();
+  events: Map<number, IEvent> = new Map();
 
   constructor(private http: HttpClient) {
   }

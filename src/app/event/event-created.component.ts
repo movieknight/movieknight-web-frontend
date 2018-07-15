@@ -20,11 +20,13 @@ export class EventCreatedComponent implements OnInit {
   }
 
   getLocation() {
-    return this.router.url;
+    return window.location;
   }
 
   getShareLink() {
-    return this.getLocation().replace('/event', '/event/recommendation');
+    const url = this.getLocation();
+    // this.event.id
+    return url.protocol + '//' + url.host + '/event/recommend/' + 1;
   }
 
   ngOnInit() {

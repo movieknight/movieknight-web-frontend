@@ -29,6 +29,14 @@
     color: mat-color($primary, default-contrast);
   }
 
+  .mat-snack-bar-container {
+    background-color: mat-color($primary, 400);
+  }
+
+  .mat-simple-snackbar-action {
+    color: whitesmoke;
+  }
+
   @include docs-site-api-theme($theme);
   @include docs-site-markdown-theme($theme);
   @include docs-site-svg-theme($theme);

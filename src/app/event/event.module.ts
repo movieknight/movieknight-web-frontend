@@ -8,6 +8,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {EventCreatedComponent} from './event-created.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {EventService} from '../../api/event/event.service';
+import {EventRecommendComponent} from './event-recommend.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import {EventService} from '../../api/event/event.service';
     FlexLayoutModule, MatIconModule, FormsModule, ReactiveFormsModule
   ],
   declarations: [
-    EventCreateComponent, EventCreatedComponent
+    EventCreateComponent, EventCreatedComponent, EventRecommendComponent
   ],
   providers: [
     EventService
