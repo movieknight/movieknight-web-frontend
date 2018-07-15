@@ -2,7 +2,7 @@ import { inject, TestBed } from '@angular/core/testing';
 
 import { AuthService } from './auth.service';
 
-describe('AuthService', () => {
+describe('EventService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [AuthService]

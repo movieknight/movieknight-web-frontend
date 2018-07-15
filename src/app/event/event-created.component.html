@@ -11,18 +11,18 @@
       <h2 style="text-align: center;">Sharing Links</h2>
       <h4 style="margin: 0;">Admin Link: &nbsp;</h4>
       <mat-form-field>
-        <input matInput value="http://site.com/event/9386810" />
+        <input matInput value="{{getLocation()}}" />
       </mat-form-field>
       <br>
       <br>
       <h4 style="margin: 0;">Voting Link: &nbsp;</h4>
       <mat-form-field>
-        <input matInput value="http://site.com/event/9386810" />
+        <input matInput value="{{getShareLink()}}" />
       </mat-form-field>
       <br>
-      <a mat-raised-button style="float: right;" color="primary" href="http://site.com/event/9386810">Vote Now</a>
+      <a mat-raised-button style="float: right;" color="accent" href="http://site.com/event/9386810">Vote Now</a>
     </mat-card>
   </div>
   <br>
-  <button mat-raised-button color="primary" routerLink="/event/new">Back</button>
+  <button mat-raised-button color="accent" routerLink="/event/new">Back</button>
 </div>
