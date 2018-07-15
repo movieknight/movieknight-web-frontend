@@ -1,0 +1,23 @@
+@import '~@angular/material/theming';
+@import './app-theme';
+@import './styles/api';
+@import './styles/markdown';
+@import './styles/tables';
+@import './styles/general';
+@include mat-core();
+
+body {
+  margin: 0;
+  background-color: map-get($mat-purple, 800);
+  color: white;
+}
+
+.mat-input-element {
+  color: whitesmoke;
+}
+
+.container {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
