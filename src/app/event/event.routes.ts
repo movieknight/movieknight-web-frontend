@@ -5,5 +5,5 @@ import {EventCreatedComponent} from './event-created.component';
 
 export const eventRoutes: Routes = [
   { path: 'new', component: EventCreateComponent },
-  { path: 'created', component: EventCreatedComponent }
+  { path: ':id', component: EventCreatedComponent }
 ];

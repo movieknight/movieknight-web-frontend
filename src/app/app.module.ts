@@ -20,10 +20,8 @@ import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptors';
 
 import { AppComponent } from './app.component';
-import { SidenavModule } from './sidenav/sidenav.module';
 import { AlertsModule } from './alerts/alerts.module';
 import { appRoutes } from './app.routes';
-import { EventCreatedComponent } from './event/event-created.component';
 
 @NgModule({
   declarations: [
@@ -44,8 +42,7 @@ import { EventCreatedComponent } from './event/event-created.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    AlertsModule.forRoot(),
-    SidenavModule
+    AlertsModule.forRoot()
   ],
   providers: [AuthGuard, {
     provide: HTTP_INTERCEPTORS,
